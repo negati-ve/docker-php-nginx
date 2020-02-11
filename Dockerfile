@@ -27,7 +27,8 @@ RUN chown -R nobody.nobody /var/www/html && \
   chown -R nobody.nobody /run && \
   chown -R nobody.nobody /var/lib/nginx && \
   chown -R nobody.nobody /var/tmp/nginx && \
-  chown -R nobody.nobody /var/log/nginx
+  chown -R nobody.nobody /var/log/nginx && \
+  chown nobody.nobody /etc/nginx/nginx.conf
 
 # Make the document root a volume
 VOLUME /var/www/html
